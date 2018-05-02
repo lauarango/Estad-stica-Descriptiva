@@ -1,0 +1,73 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\title{Estadística Descriptiva}
+\begin{document}
+\maketitle
+
+Supongamos que tenemos un conjunto de datos numericos $x_1$,$\ldots$, $x_n$, que
+representan mediciones de alguna variable de interés en un experimento aleatorio.
+Para conocer algunas características globales de esta variable se pueden
+calcular ciertas medidas de tendencia central como la media, moda y mediana;
+y también otras medidas llamadas de dispersión como la varianza, la desviación
+estándar y el rango. Definiremos estos conceptos a continuación.\\\\
+\textbf{Medidas de tendencia central.} La  \textit{media} de los datos numéricos $x_1$,$\ldots$, $x_n$, denotada por $\bar{x}$, es simplemente el promedio $(x_1 +  +x_n)/n$. Por otro lado, la
+moda es el valor que aparece con mayor frecuencia. Si ningún valor se repite, se
+dice que no hay moda, o que todos los valores son moda. Si existe un único valor
+con mayor número de repeticiones, entonces a ese valor se le llama la moda, y el
+conjunto de datos se dice que es unimodal. Pueden existir, sin embargo, dos o más
+valores que sean los que mayor número de veces se repiten, en tal caso la moda
+consta de esos valores, y se dice que el conjunto de datos es bimodal. Si hay
+más de dos valores con mayor número de repeticiones, se dice que el conjunto
+de datos es multimodal. Para calcular la mediana procedemos como sigue. Se
+ordena la muestra $x_1$,$\ldots$, $x_n$ de menor a mayor incluyendo repeticiones, y se
+obtiene la muestra ordenada $x_{(1)}$,$\ldots$, $x_{(n)}$, en donde $x_{(1)}$ denota el dato más
+pequeño y $x_{(n)}$ es el dato más grande. La mediana, denotada por $\tilde{x}$, se define
+como sigue\\
+\begin{equation*}
+     \tilde{x} = \left\{
+	       \begin{array}{ll}
+		 \frac{1}{2} [x_{(\frac{n}{2})} + x_{(\frac{n}{2} + 1)}]      & \mathrm{si\ } \textit{n} \ es \ par \\
+		 x_{(\frac{n + 1}{2})} & \mathrm{si\ } \textit{n} \ es \ impar \\
+	       \end{array}
+	     \right.
+   \end{equation*}
+  De este modo, cuando tenemos un número impar de datos, la mediana es el
+dato ordenado que se encuentra justo a la mitad. Y cuando tenemos un número
+par de datos, la mediana se calcula promediando los dos datos ordenados que
+están en medio.\\\\
+\textbf{Medidas de dispersión.} Definiremos ahora algunas medidas que ayudan a
+cuantificar la dispersión que puede presentar un conjunto de datos numéricos
+$x_1$,$\ldots$, $x_n$. La \textit{varianza}, denotada por $s^2$, se define como sigue\\
+
+\begin{equation*}
+s^2 = \frac{1}{n - 1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\end{equation*}
+
+en donde $\bar{x}$ es la media muestral definida antes. La \textit{desviación estándar} es
+la raíz cuadrada positiva de $s^2$, y se le denota naturalmente por $s$. El \textit{rango} es
+el dato más grande menos el dato más pequeño, es decir,$x_{(n)} - x_{(1)}$.\\\\\\\\\\
+
+\textbf{Ejercicio}\\
+
+a) Media aritmética: 0.875\\
+Mediana: 2\\
+Modas: 2,4\\
+Varianza: 12.109375\\
+Rango: 10\\\\
+
+
+b) Media aritmética: 4.2857142857143\\
+Mediana: 3.5\\
+Modas: 3.5,7.5\\
+Varianza: 4.9897959183673\\
+Rango: 6\\\\
+
+c) Media aritmética: 5.5\\
+Mediana: 5.5\\
+Moda: No hay\\
+Varianza: 8.25\\
+Rango: 9\\
+
+\end{document}
+
